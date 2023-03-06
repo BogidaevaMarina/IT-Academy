@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>2.1+ WebP по сравнению с png и jpeg</h1>
+    <h2>Плюсы WebP</h2>
+    <ul>
+        <li>Из-за меньшего размера файлов страницы с изображениями WebP загружаются быстрее.</li>
+        <li>WebP сжимает изображения без потерь на 26% лучше, чем PNG.</li>
+        <li>WebP поддерживает прозрачность без потерь.</li>
+        <li>WebP сжимает изображения с потерями лучше, чем JPEG на 25-34%</li>
+        <li>WebP единственный формат изображения, который поддерживает прозрачный фон PNG и возможности анимации GIF.
+        </li>
+    </ul>
+    <h2>Минусы WebP</h2>
+    <ul>
+        <li>Поддерживается не всеми браузерами.</li>
+        <li>Качество все еще снижается. Это не столько недостаток WebP, сколько недостаток любого сжатия с потерями.
+        </li>
+    </ul>
+    <div>
+        <img src="image/1.jpg" title="JPEG 103КБ" alt="" width="640" height="480">
+        <img src="image/1.webp" title="WebP 103КБ" alt="" width="640" height="480">
+        <p>Картинка в jpeg на 103кб и она же в webp на 103кб. Hазница не видна.</p>
+    </div>
+
+    <div>
+        <img src="image/2.jpg" title="JPEG 106КБ" alt="" width="400" height="256">
+        <img src="image/2.webp" title="WebP 106КБ" alt="" width="400" height="256">
+        <img src="image/3.webp" title="WebP 45.5КБ" alt="" width="400" height="256">
+        <p>Картинка в jpeg на 106кб она же в webp на 106кб и еще сжата до 45.5кб. Существенной разницы не вижу. Webp однозначно выигрывает. </p>
+    </div>
+
+    <h1>2.2+ </h1>
+    <p>Исходную картинку skobki2.png. преобразовала в JPEG формат с качеством 99 (в среде разработке сайтов ) и получила 81.8Кб. Далее JPEG формат в GIF с качеством 99 и получила обьем 78.3Кб. Но это не дало требуемого качества. Края не четкие у кавычек и появилась грязь на многоцветном градиенте. :( </p>
+    <div>
+        <img src="image/4.png" title="PNG 148КБ" alt="" width="400" height="600">
+        <img src="image/6.jpg" title="JPEG 81.8KБ" alt="" width="400" height="600">
+        <img src="image/5.gif" title="GIF 78.3КБ" alt="" width="400" height="600">
+    </div>
+</body>
+</html>
