@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>3.1+</h1>
+    <p>Некорректные символы распознаются как 0. Все неправильные шестнадцатеричные символы заменяем нулями 0,
+        получается:<br> "BruceWillis" B00CE000000;<br> "CANDY" CA0D0.</p>
+    <p>Добиваем полученное нулями до количества знаков, делимого на 3.<br> Результат:<br> RGB:B00C E000 0000;<br>
+        RGB:CA00 0000 0000.</p>
+    <p>Обрезаем каждый из аргументов справа, оставляя 2 символа, и получаем наш результат:<br> RGB (B0, E0, 00) =
+        #b0e000 <font color="#BruceWillis"> BruceWillis</font>
+        <font color="#b0e000"> BruceWillis;</font><br> RGB (CA, 00, 00) = #ca0000 <font color="#CANDY"> CANDY</font>
+        <font color="#ca0000">CANDY</font>.
+    </p>
+
+    <h1>3.2+</h1>
+    <p>Только так :)<br>В итоге 40,8кб но с применением не по правилам style="line-height" :(</p>
+    <div style="line-height: 0px"><img src="1.jpeg"><br><img src="22.jpeg"><img src="3.png"><img src="4.jpeg"><img
+            src="5.png"><img src="6.jpeg"><br><img src="7.jpeg"></div>
+
+    <h1>3.3+</h1>
+    <h2>Безопасная палитра</h2>
+    <p>Это палитра из 216 оттенков, которые отображаются максимально точно независимо от монитора или браузера.<br>
+        Именно эти цвета отображаються на всех устройствах одинаково. Каждый цвет будет передан без искажений и может
+        быть использован для графики, текста и фонов.
+    </p>
+</body>
+</html>
