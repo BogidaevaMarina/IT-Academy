@@ -6,3 +6,5 @@ https://bohidaeva.github.io/IT-Academy/№2.1-2.2/index.html <br>
 https://bohidaeva.github.io/IT-Academy/№3/index.html <br>
 https://bohidaeva.github.io/IT-Academy/№3+/index.html <br>
 https://bohidaeva.github.io/IT-Academy/№4/index.html <br>
+https://bohidaeva.github.io/IT-Academy/№5/MAKET_DIV.html <br>
+https://bohidaeva.github.io/IT-Academy/№5/MAKET_TABLE.html <br>
