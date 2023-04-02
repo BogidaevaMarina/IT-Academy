@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LINKS</title>
+    </head>
+    <body>
+        <!--Первый способ. С помощью списка <li> добавив стилевое свойство display со значением inline делаем элементы списка строчными. Что позволило расположить ссылки горизонтально. Разделитель добавлин с помощью border-right.-->
+        <!--Достоинства:элементы располагаются на одной строке, последовательно.-->
+        <!--Недостатки:ширина и высота элемента определяются по содержимому. Поменять их нельзя.-->
+        <div>
+            <style>
+            a:link {color: green;}
+            a:hover {color: red;}
+            .first li {display: inline;border-right: solid red 3px;padding: 5px;}
+            li:last-child {border-right: none;}
+        </style>
+            <div class="first">
+                <ul>
+                    <li><a href="6a.html">первая ссылка</a></li>
+                    <li><a href="6a.html">вторая ссылка</a></li>
+                    <li><a href="6a.html">третья ссылка</a></li>
+                    <li><a href="6a.html">четвертая ссылка</a></li>
+                    <li><a href="6a.html">пятая ссылка</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Второй способ. Делаем элементы списка плавающими float: left что бы они располагались по горизонтали. Разделитель добавлин с помощью селектора ::after добавлена картинка (разделитель) после объекта.-->
+        <!--Достоинства:элементы располагаются по горизонтали, последовательно.-->
+        <!--Недостатки: такое меню сложно отцентрировать-->
+        <div>
+            <style>
+            .second li {float: left;list-style: none;}
+            .second li::after {content: url(stick.png); padding: 5px;}
+            li:last-child::after {visibility: hidden;}
+        </style>
+            <div class="second">
+                <ul>
+                    <li><a href="6a.html">первая ссылка</a></li>
+                    <li><a href="6a.html">вторая ссылка</a></li>
+                    <li><a href="6a.html">третья ссылка</a></li>
+                    <li><a href="6a.html">четвертая ссылка</a></li>
+                    <li><a href="6a.html">пятая ссылка</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+        <!--Третий способ. Делаем элементы списка блочно-строчными display: inline-block что бы они располагались в строке и при этом могли иметь важные свойства блока. Разделитель добавлин с помощью селектора ::after для добавления символа(черты) после объекта.-->
+        <!--Достоинства:элементы располагаются на одной строке, последовательно. Можно задать высоту и ширину.-->
+        <div>
+            <style>
+            .third li {display: inline-block;list-style: none;}
+            .third li::after {content: "|";color: #ff0000;padding: 5px;}
+            li:last-child::after {visibility: hidden;}
+        </style>
+            <div class="third">
+                <ul>
+                    <li><a href="6a.html">первая ссылка</a></li>
+                    <li><a href="6a.html">вторая ссылка</a></li>
+                    <li><a href="6a.html">третья ссылка</a></li>
+                    <li><a href="6a.html">четвертая ссылка</a></li>
+                    <li><a href="6a.html">пятая ссылка</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Четвертый способ. Табличная вёрстка с ячейками по горизонтали. Разделитель добавлин с помощью повторяющиейся картинки.-->
+        <!--Достоинства:табличная вёрстка проста .-->
+        <!--Недостатки:на современных сайтах практикуется адаптивная блочная верстка, а таблицы устарели.-->
+        <div>
+            <style>
+            .four {margin-left: 30px;}
+            td {background: url(stick.png) no-repeat right; padding: 10px;}
+            td:last-child {background: none;}
+        </style>
+            <div class="four">
+                <table>
+                    <tr>
+                        <td><a href="6a.html">первая ссылка</a></td>
+                        <td><a href="6a.html">вторая ссылка</a></td>
+                        <td><a href="6a.html">третья ссылка</a></td>
+                        <td><a href="6a.html">четвертая ссылка</a></td>
+                        <td><a href="6a.html">пятая ссылка</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
