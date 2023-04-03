@@ -12,3 +12,4 @@ https://bohidaeva.github.io/IT-Academy/№6/6a.html <br>
 https://bohidaeva.github.io/IT-Academy/№6/6b.html <br>
 https://bohidaeva.github.io/IT-Academy/№6/6c.html <br>
 https://bohidaeva.github.io/IT-Academy/№6/6c(2).html <br>
+https://bohidaeva.github.io/IT-Academy/№6/6d.html <br>
