@@ -14,8 +14,8 @@
             <style>
             a:link {color: green;}
             a:hover {color: red;}
-            .first li {display: inline;border-right: solid red 3px;padding: 5px;}
-            li:last-child {border-right: none;}
+            div.first li {display: inline;border-right: solid red 3px;padding: 5px;}
+            div.first li:last-child {border-right: none;}
         </style>
             <div class="first">
                 <ul>
@@ -32,9 +32,9 @@
         <!--Недостатки: такое меню сложно отцентрировать-->
         <div>
             <style>
-            .second li {float: left;list-style: none;}
-            .second li::after {content: url(stick.png); padding: 5px;}
-            li:last-child::after {visibility: hidden;}
+            div.second li  {float: left;list-style: none;}
+            div.second li::after {content: url(stick.png); padding: 5px;}
+            div.second li:last-child::after {visibility: hidden;}
         </style>
             <div class="second">
                 <ul>
@@ -51,9 +51,9 @@
         <!--Достоинства:элементы располагаются на одной строке, последовательно. Можно задать высоту и ширину.-->
         <div>
             <style>
-            .third li {display: inline-block;list-style: none;}
-            .third li::after {content: "|";color: #ff0000;padding: 5px;}
-            li:last-child::after {visibility: hidden;}
+            div.third li {display: inline-block;list-style: none;}
+            div.third li::after {content: "|";color: #ff0000;padding: 5px;}
+            div.third li:last-child::after {visibility: hidden;}
         </style>
             <div class="third">
                 <ul>
@@ -70,9 +70,9 @@
         <!--Недостатки:на современных сайтах практикуется адаптивная блочная верстка, а таблицы устарели.-->
         <div>
             <style>
-            .four {margin-left: 30px;}
-            td {background: url(stick.png) no-repeat right; padding: 10px;}
-            td:last-child {background: none;}
+            div.four {margin-left: 30px;}
+            div.four td {background: url(stick.png) no-repeat right; padding: 10px;}
+            div.four td:last-child {background: none;}
         </style>
             <div class="four">
                 <table>
