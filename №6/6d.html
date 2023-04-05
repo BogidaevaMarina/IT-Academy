@@ -1,40 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <style>
-            .star2{
-                
-            }
-    .star{
-         display: inline-block;
-         background-image: url("star0.png");
-         width: 75px;
-         height: 78px;
-        }
-        .star:hover ~ .star:nth-child(1)
-        .star:hover ~ .star:nth-child(-n+2),
-        .star:hover ~ .star:nth-child(-n+3),
-        .star:hover ~ .star:nth-child(-n+4),
-        .star:hover ~ .star:nth-child(-n+5){
-         background-image: url("star1.png");
-         width: 75px;
-         height: 78px;
-        }
-
-    </style>
-        <div class="star2">
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-        </div>
-
-    </body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+.star2{
+overflow: hidden;
+}
+.star{
+float: left;
+background-image: url("star0.png");
+width: 75px;
+height: 78px;
+}
+div.star2:hover div.star{
+background-image: url("star1.png");
+width: 75px;
+height: 78px;
+}
+div.star:hover ~ div.star{
+background-image: url("star0.png");
+}
+</style>
+    <div class="star2">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+  </body>
 </html>
