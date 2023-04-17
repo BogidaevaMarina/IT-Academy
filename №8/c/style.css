@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background: #ADD8E6;
+    text-align: center;
+    padding: 10px;
+}
+
+.conteaner {
+    max-width: 100%;
+    background: #F0E68C;
+}
+
+h2 {
+    color: #0000FF;
+    text-align: center;
+}
+
+.text {
+    color: black;
+}
+
+.menu {
+    width: 160px;
+    float: left;
+    padding: 10px;
+}
+
+.image {
+    float: left;
+    margin: 0px 20px 20px 20px;
+}
+
+.content {
+    margin-left: 180px;
+    padding: 10px;
+    background-image: url(img/ball.png);
+    background-position: right top;
+    background-repeat: repeat-y;
+    background-color: #fff;
+}
+
+.clear {
+    clear: both;
+}
+
+.menu-2 {
+    position: fixed;
+    right: 30px;
+    top: 5%;
+    padding: 10px;
+    background: rgb(104, 228, 131);
+    border: 1px solid #0c3f02;
+}
+
+@media(max-width:1920px) {
+    .wraper {
+        margin: 0px 150px 0px 150px;
+    }
+}
+
+@media(max-width:1600px) {
+    .wraper {
+        margin: 0px;
+    }
+}
+
+
+@media(max-width:768px) {
+
+    .content {
+        background-image: none;
+    }
+}
+
+@media(max-width:720px) {
+    .image {
+        width: 100%;
+        margin: 5px;
+        padding: 0px 0px 10px 0px;
+    }
+}
+
+@media(max-width:480px) {
+    .header {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0px;
+        float: none;
+        order: 1;
+    }
+
+    .menu {
+        float: none;
+        order: 2;
+    }
+
+    .conteaner {
+        flex-direction: column;
+        max-width: 100%;
+        display: flex;
+        background: #F0E68C;
+    }
+}
