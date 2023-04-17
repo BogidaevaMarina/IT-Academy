@@ -1,0 +1,45 @@
+.wraper {
+    text-align: center;
+}
+
+.content {
+    position: relative;
+    width: 400px;
+    height: 423px;
+    margin: 0 auto;
+}
+
+.img-1 {
+    position: absolute;
+    top: 23px;
+}
+
+.img-2 {
+    position: absolute;
+    left: 200px;
+}
+
+.img-3 {
+    position: absolute;
+    top: 223px;
+    left: 100px;
+}
+
+.img-4 {
+    position: absolute;
+    z-index: 5;
+    left: 80px;
+    top: 90px;
+}
+
+div.img-1:hover {
+    z-index: 10;
+}
+
+div.img-2:hover {
+    z-index: 10;
+}
+
+div.img-3:hover {
+    z-index: 10;
+}
