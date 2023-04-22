@@ -18,3 +18,5 @@ https://bohidaeva.github.io/IT-Academy/№7/index.html <br>
 https://bohidaeva.github.io/IT-Academy/a/index.html <br>
 https://bohidaeva.github.io/IT-Academy/№8/b/index.html <br>
 https://bohidaeva.github.io/IT-Academy/№8/c/index.html <br>
+https://bohidaeva.github.io/IT-Academy/№9/a/index.html <br>
+https://bohidaeva.github.io/IT-Academy/№9/b/index.html <br>
