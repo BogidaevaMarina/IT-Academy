@@ -8,11 +8,72 @@
     </head>
     <body>
         <style>            
-          .svg_1:hover {fill:rgb(207, 241, 14);stroke: rgb(51, 218, 17);transform: scale(0.8);}
+          .SVG-1:hover {fill: bisque;}
+          .SVG-2:hover {fill:url(#LG1);stroke: rgb(51, 218, 17);}
+          .SVG-3:hover {fill:rgb(255, 0, 0);stroke: rgb(0, 0, 0);}
+          .SVG-4:hover {fill:rgb(133, 134, 123);stroke: rgb(131, 55, 42);}
+          .SVG-5:hover {fill:rgb(207, 241, 14);stroke: rgb(218, 47, 17);}
+          .SVG-6 {visibility: hidden;}
+          .SVG-3:hover + .SVG-6 {visibility:visible;}
         </style>
-        <svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
-            <path class="svg_1"
-                d="m227.19601,127.10307l-26.9597,-27.53434l0,-65.7605l-23.11209,0l0,42.15578l-53.92821,-55.07768l-104.00001,106.21674l24.75855,-0.60248l0,107.38573l157.38233,0l0,-106.78325l25.85913,0zm-104.00001,91.42445l-51.35727,0l0,-62.94592l51.35727,0l0,62.94592zm49.8957,-26.97682l-33.74806,0l0,-36.34677l33.74806,0l0,36.34677z"stroke-width="1.5" fill="green" stroke="black"/>
-            </svg>
-        </body>
-    </html>
+        <svg width="400" height="400">
+            <rect class="SVG-1" x="60" y="195" width="280" height="150"
+                fill="white" stroke="brown" stroke-width="5" />
+                <polygon class="SVG-2" points="50,195 200,35 350,195"
+                    fill="green" stroke="grey" stroke-width="5"/>
+                    <linearGradient id='LG1' x1='40%' y1='20%' x2='40%' y2='40%'
+                        spreadMethod=repeat>
+                        <stop offset='0%' stop-color=green /><stop offset='100%'
+                                stop-color=yellow /></linearGradient>
+                            <rect x=25 y=105 width=100 height=80 stroke=red
+                                fill='url(#LG1)' height='0' width='0'
+                                position='absolute' visibility='hidden'/>
+                                <rect class="SVG-3" x="270" y="100" width="20"
+                                    height="50" fill="green" stroke="grey"
+                                    stroke-width="5"/>
+                                    <path stroke="#000" fill="#fff"
+                                        stroke-width="1.5"
+                                        d="m245.7706,75.72504c-4.33725,0
+                                        -8.06009,-3.77159
+                                        -9.88236,-9.21641c-0.7278,0.68132
+                                        -1.53057,1.09387
+                                        -2.38731,1.09387c-2.59082,0
+                                        -4.74674,-3.49482
+                                        -5.41309,-8.23892c-1.13737,0.75383
+                                        -2.45983,1.21024
+                                        -3.87244,1.21024c-4.23783,0
+                                        -7.67548,-3.88799
+                                        -7.67548,-8.68112c0,-4.32661
+                                        2.81932,-7.88349
+                                        6.48182,-8.54147c-0.16415,-0.467
+                                        -0.29148,-0.92947
+                                        -0.29148,-1.41971c0,-4.58916
+                                        7.49811,-8.332 16.73893,-8.332c9.24082,0
+                                        16.73894,3.74285
+                                        16.73893,8.332c0,0.30877
+                                        -0.11429,0.58433
+                                        -0.18043,0.8844c0.40475,-0.16879
+                                        0.80551,-0.34911
+                                        1.24917,-0.34911c2.47206,-0.00001
+                                        4.48315,2.81655
+                                        4.48315,6.28392c0,3.46738
+                                        -2.01109,6.28392
+                                        -4.48315,6.28392c-0.30295,0
+                                        -0.56055,-0.17546
+                                        -0.84667,-0.25601c0.25018,1.38643
+                                        0.41639,2.8011 0.41639,4.30565c0,9.17832
+                                        -4.9547,16.64074
+                                        -11.07601,16.64074l0,0.00001l0.00001,0z"
+                                        class="SVG-6" transform="rotate(100 250
+                                        80)"/>
+                                        <rect class="SVG-4" x="100" y="245"
+                                            width="50" height="100"
+                                            fill="#3D2B1F" stroke="black"
+                                            stroke-width="5"/>
+                                            <rect class="SVG-5" x="210" y="220"
+                                                width="80" height="80"
+                                                fill="#78DBE2" stroke="rgb(131,
+                                                55, 42)" stroke-width="5"/>
+                                            </svg>
+                                        </body>
+                                    </html>
