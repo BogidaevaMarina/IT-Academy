@@ -26,7 +26,7 @@
 .content {
     grid-area: content;
     padding: 10px;
-    background-image: url(//№9/img/ball.png);
+    background-image: url(img/ball.png);
     background-repeat: repeat-y;
     background-position: right top;
 }
