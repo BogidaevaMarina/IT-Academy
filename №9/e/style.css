@@ -1,0 +1,91 @@
+.header,
+.footer {
+    background-color: #ADD8E6;
+    color: #0000FF;
+    text-align: center;
+    padding: 10px;
+}
+
+.block {
+    display: flex;
+}
+
+.menu {
+    width: 220px;
+    background-color: #F0E68C;
+}
+
+.content {
+    flex: 1 0;
+    padding: 10px;
+    background-image: url(img/ball.png);
+    background-repeat: repeat-y;
+    background-position: right top;
+}
+
+img {
+    float: left;
+    margin: 0px 20px 20px 20px;
+}
+
+h2 {
+    text-align: center;
+}
+ h3 {
+    text-align: left;
+    padding-left: 20px;
+ }
+
+@media(max-width:768px) {
+
+    .content {
+        background-image: none;
+    }
+}
+
+@media(max-width:720px) {
+    img {
+        width: 100%;
+        margin: 5px;
+        padding-bottom: 10px;
+    }
+}
+
+@media(max-width:480px) {
+
+    .header,
+    .footer {
+        display: none;
+    }
+
+    .content {
+        float: none;
+        order: 1;
+    }
+
+    .menu {
+        order: 2;
+        background: none;
+        width: 100%;
+    }
+
+    .block {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
+
+    h3 {
+        text-align: left;
+        padding: 0px 0px 0px 8px;
+        margin-top: 0px;
+    }
+}
