@@ -11,12 +11,12 @@
 }
 
 .menu {
-    width: 180px;
+    flex: 0 0 180px;
     background-color: #F0E68C;
 }
 
 .content {
-    flex: 1 0;
+    flex: 1 1 100%;
     padding: 10px;
     background-image: url(img/ball.png);
     background-repeat: repeat-y;
