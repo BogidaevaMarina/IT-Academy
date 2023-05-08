@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>anketa_oper.html</title>
+    </head>
+    <body>
+        <script>
+ var surname=prompt('Фамилия');
+ var name=prompt('Имя');
+ var patronymic=prompt('Отчество');
+ var ageStr=prompt('Введите ваш возраст:');
+ var age=parseFloat(ageStr);   
+ var genderStr=confirm('Если вы мужского пола, нажмите "ОК", если женского, нажмите "ОТМЕНА"');
+ var pol=(genderStr)?('мужчина'):('женщина');
+ var pension=(age>= 60 && genderStr === true) || ( age>= 55 && genderStr === false) ? 'да' : 'нет';
+
+alert('Ваше ФИО: '+surname+" "+name+" "+patronymic+'\n'+
+      'Ваш возраст в годах: '+ageStr+'\n'+
+      'Ваш возраст в днях: '+(ageStr*365)+'\n'+
+      'Через 5 лет вам будет: '+(age+5)+'\n'+
+      'Ваш пол: '+pol+''+'\n'+
+      'Вы на пенсии: '+pension);
+    </script>
+    </body>
+</html>
