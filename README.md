@@ -23,3 +23,6 @@ https://bohidaeva.github.io/IT-Academy/№9/b/index.html <br>
 https://bohidaeva.github.io/IT-Academy/№9/d/index.html <br>
 https://bohidaeva.github.io/IT-Academy/№9/e/index.html <br>
 https://bohidaeva.github.io/IT-Academy/№9/f/index.html <br>
+
+https://bohidaeva.github.io/IT-Academy/JavaScript/№1/index.html <br>
+https://bohidaeva.github.io/IT-Academy/JavaScript/№1(1)/index.html <br>
