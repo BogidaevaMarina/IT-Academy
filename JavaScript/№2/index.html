@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="countries.js"></script>
+        <title>COUNTRIES</title>
+    </head>
+    <body>
+        <input type='button' value='ввод информации о стране' onclick='userAddCountry( )'><br>
+        <br>
+        <input type='button' value='получение информации о стране' onclick='userGetCountryInfo( )'><br>
+        <br>
+        <input type='button' value='перечень всех стран' onclick='userListCountrys( )'><br>
+        <br>
+        <input type='button' value='удаление информации о стране' onclick='userDeleteCountry( )'><br>
+        <br>
+        <script>
+        var countrysH={};
+        addCountry('Германия','Берлин');
+        addCountry('Венгрия','Будапешт');
+        addCountry('Франция','Париж');
+        console.log( "список стран:" + listCountrys() );
+    </script>
+    </body>
+</html>
