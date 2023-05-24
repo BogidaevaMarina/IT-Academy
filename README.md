@@ -28,3 +28,4 @@ https://bohidaeva.github.io/IT-Academy/JavaScript/№1/index.html <br>
 https://bohidaeva.github.io/IT-Academy/JavaScript/№1(2)/index.html <br>
 https://bohidaeva.github.io/IT-Academy/JavaScript/№2/index.html <br>
 https://bohidaeva.github.io/IT-Academy/JavaScript/№3/simply.html <br>
+https://bohidaeva.github.io/IT-Academy/JavaScript/№3/words.html <br>
