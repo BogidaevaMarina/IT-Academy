@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>words</title>
+    </head>
+    <body>
+        <style>
+                #inputText {
+                  width: 300px;
+                  height: 100px;
+                }
+            
+                #result {
+                  margin-top: 10px;
+                  font-weight: bold;
+                }
+        </style>
+
+        <label for="inputText">Введите текст:</label><br>
+        <textarea id="inputText" placeholder="Введите текст"></textarea><br>
+        <button onclick="findLongestWords()">Найти самые длинные слова</button>
+        <div id="result"></div>
+
+            <script>
+                function findLongestWords() {
+                  var inputText = document.getElementById("inputText").value;
+                  var words = inputText.split(" ");// Разделяем введенный текст на слова
+                  words.sort(function(a, b) { // Сортируем слова по длине в порядке убывания
+                    return b.length - a.length;
+                  });
+                  var longestWords = words.slice(0, 3);// Получаем первые три самые длинные слова
+            
+                  alert(longestWords.join("; "));
+                }
+            </script>
+    </body>
+</html>
