@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>simply</title>
+    </head>
+    <body>
+        <script>
+    function isPrime(num) { //isPrime проверяет является ли число num простым числом
+        if (num < 2) { 
+          return false;
+        }
+        
+        for (var i = 2; i <= Math.sqrt(num); i++) {//перебираем числа от 2 до квадратного корня из num (используя for цикл и Math.sqrt(num)) и проверяем делится ли num на какое-либо из этих чисел без остатка
+          if (num % i === 0) {
+            return false;
+          }
+        }
+        
+        return true;
+      }
+      
+      function printPrimeNumbers(start, end) {// перебирает все числа в заданном интервале (start и end) с помощью цикла for
+        for (var num = start; num <= end; num++) {
+          if (isPrime(num)) {
+            console.log(num);
+          }
+        }
+      }
+      printPrimeNumbers(1, 1000);
+    </script>
+    </body>
+</html>
