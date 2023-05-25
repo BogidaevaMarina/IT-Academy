@@ -21,9 +21,10 @@ body {
     max-width: 1940px;
     padding: 0 10px;
     margin: 0 auto;
+}
+.fon {
     background-color: #94C31F;
 }
-
 .fon img {
     display: block;
     width: 100%;
