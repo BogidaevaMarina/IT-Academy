@@ -12,15 +12,16 @@
 <body>
     <div id="header"></div>
     <script>$.ajax({
-        url: 'header.html',    // Путь к файлу шапки
-        dataType: 'html',           // Ожидаемый тип данных - HTML
+        url: 'header.html',    
+        dataType: 'html',           
         success: function(response) {
-            $('#header').html(response);    // Вставляем содержимое файла в элемент с id="header"
+            $('#header').html(response);   
         },
         error: function(xhr, status, error) {
-            console.log('Ошибка при загрузке файла:', error);    // Обработка ошибок загрузки
+            console.log('Ошибка при загрузке файла:', error);    
         }
     });</script>
+
     <div class="container">
         <div class="fon">
             <img src="images/fon2.png" alt="Фон" width="1918" height="335">
@@ -30,6 +31,17 @@
         </div>
     </div>
    
-    
+    <div id="footer"></div>
+    <script>$.ajax({
+        url: 'footer.html',    
+        dataType: 'html',           
+        success: function(response) {
+            $('#footer').html(response);   
+        },
+        error: function(xhr, status, error) {
+            console.log('Ошибка при загрузке файла:', error);    
+        }
+    });</script>
+  
 </body>
 </html>
