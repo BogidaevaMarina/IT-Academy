@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="icon" href="images/favicon.ico" type="image/icon">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <title>Центр доктора Лубунца</title>
+    </head>
+    <body>
+        <div class="wrapper">
+<!---------------------------------------------Шапка----------------------------------------------->
+            <header class="header">
+                <div class="container">
+                    <div class="header__logo">
+                        <a class="logo__link" href="#">
+                            <img class="logo" src="images/logo-1.png"
+                                alt="Логотип" width="162" height="50">
+                        </a>
+                    </div><!--header__logo-->
+                    <div class="header__icon">
+                        <a class="logo__link" href="https://www.instagram.com/"><img
+                                src="images/instagram.svg"
+                                alt="Инстаграм" width="30" height="30">
+                        </a>
+                        <a class="logo__link"
+                            href="https://twitter.com/?lang=ru"><img
+                                src="images/twitter.svg"
+                                alt="Твиттер" width="29.69"
+                                height="24.37">
+                        </a>
+
+                        <a class="logo__link" href="https://www.facebook.com/"><img
+                                src="images/facebook.svg"
+                                alt="Фейсбук" width="17.03"
+                                height="30">
+                        </a>
+                    </div><!--header__icon--></div><!--container-->
+                <hr>
+<!---------------------------------------------Меню----------------------------------------------->
+                <div class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="employees.html">Сотрудники</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">О центре</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Галерея</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Об авторе</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Методика</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Сертификаты</a>
+                        </li>
+                    </ul>
+                </div><!--menu-->
+            </header>
+<!---------------------------------------------Основной контент (фото, кнопка записи)------------------------------------>
+            <main class="main">
+                <div class="block-1">
+                    <div class="foto-1">
+                        <img src="images/ornament.png" alt="Орнамент"
+                            width="983" height="668">
+                        <div class="text">
+                            <h1>ЦЕНТР ДОКТОРА ЛАБУНЦА</h1>
+                            <h2 class="main__text-1">лечение и профилактика
+                                заболеваний опорно-двигательного аппарата</h2>
+                            <h3 class="main__text-2">ИЗБАВЬСЯ ОТ БОЛИ В СПИНЕ И
+                                СУСТАВАХ</h3>
+                        </div>
+                        <button class="button-enroll">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
+<!---------------------------------------------Преимущества(блок с 6 кнопками)------------------------------------------>
+                    </div><!--foto-1-->
+                    <div class="foto-2">
+                        <img src="images/people.png" alt="Люди" width="878"
+                            height="668">
+                    </div><!--foto-2-->
+                </div><!--block-1-->
+                <div class="advantages">
+                    <div class="name">
+                        <h3>ПРЕИМУЩЕСТВА</h3>
+                        <div id="button-container">
+                            <button class="button" onclick="changeText(0)">Революционный
+                                подход
+                                в фитнес индустрии</button>
+                            <button class="button" onclick="changeText(1)">Уникальная
+                                система
+                                диагностики</button>
+                            <button class="button" onclick="changeText(2)">Поэтапная
+                                система
+                                реабилитации и тренировок</button>
+                            <button class="button" onclick="changeText(3)">Подход,ориентированный
+                                на результат</button>
+                            <button class="button" onclick="changeText(4)">Физическая
+                                активность, как
+                                основа здорового образа жизни</button>
+                            <button class="button" onclick="changeText(5)">Быстрый
+                                и стабильный эффект
+                            </button>
+                        </div>
+<!---------------------------------------------Доктор (кнопка записи)----------------------------------------------->
+                        <div id="text-container">
+                            <div class="left-half">
+                                <div class="foto-dr">
+                                    <img src="images/doctor.jpg" alt="Доктор"
+                                        width="412" height="377">
+                                </div>
+                            </div>
+                            <div class="right-half">
+                                <div class="text-dr">
+                                    <p id="text"></p>
+                                    <p id="text-2"></p>
+                                </div>
+                                <div class="button-dr">
+                                    <button class="button-right">ЗАПИСАТЬСЯ НА
+                                        КОНСУЛЬТАЦИЮ</button>
+                                </div>
+                            </div>
+                        </div>
+<!---------------------------------------------Проблемы (три кнопки)----------------------------------------------->
+                        <div class="advantages">
+                            <div class="name-2"><h3>ПРОБЛЕМЫ С КОТОРЫМИ УСПЕШНО
+                                    БОРЮТСЯ В НАШЕМ ЦЕНТРЕ</h3></div>
+                            <div id="button-container-2">
+                                <button class="button-2"
+                                    onclick="changeText_2(0)">ЛЕЧЕБНЫЕ ПРОГРАММЫ</button>
+                                <button class="button-2"
+                                    onclick="changeText_2(1)">РЕАБИЛИТАЦИОННЫЕ
+                                    ПРОГРАММЫ</button>
+                                <button class="button-2"
+                                    onclick="changeText_2(2)">КОРРЕКЦИОННЫЕ
+                                    ПРОГРАММЫ</button>
+                            </div>
+                            <div id="text-container-2">
+                                <div class="left-half-2">
+                                    <div class="list">
+                                        <ul id="list__item"></ul>
+                                    </div>
+                                </div>
+                                <div class="right-half-2">
+                                    <div class="foto-sp">
+                                        <img src="images/patient.jpg"
+                                            alt="Пациент" width="398"
+                                            height="362">
+                                        <p
+                                            style="font-size: 14px; text-align: center;opacity: 0.4;color: #000000;margin-right: 133px;">Узнайте
+                                            о нас<br>подробнее</p>
+                                        <a href="#"
+                                            onclick="openVideo(); return false;">
+                                            <img
+                                                src="images/svg - play button.png"
+                                                alt="Кнопка play" width="124"
+                                                height="126">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+<!---------------------------------------------Зеленый блок с текстом----------------------------------------------->
+                            <div class="text-container-3">
+                                <img src="images/fon.png" alt="Фон" width="1277"
+                                    height="284">
+                                <h3>Центр доктора Лабунца- прдеставляет
+                                    инновационную запатентованную систему
+                                    лечебной физкультуры премиум класса .
+                                    Симбиоз новейших достижений в сфере фитнесса
+                                    и глубоких знаний медицины направленный на
+                                    безмедикаментозное лечение, как болезней
+                                    опорно-двигательного аппарата так и
+                                    сопутствующей патологии.
+                                    В чем секрет методики? Все просто:</h3>
+                            </div>
+<!-------------------------------------------------------------------------------------------->
+                            <div class="text-container-4">
+                                <div class="block__1">
+                                    <h3>Иновационный подход к лечению
+                                        направленный на самовосстановление
+                                        человеческого организма без применения
+                                        вредных лекарственных препаратов,
+                                        оперативного лечения, а так же различных
+                                        ортопедических протезов- корсетов,
+                                        поясов и т.п.</h3></div>
+                                <div class="block__2">
+                                    <img class="img-cross"
+                                        src="images/cross.png"
+                                        alt="мед.атрибуты" width="346"
+                                        height="408">
+                                </div>
+
+                                <div class="block__3">
+                                    <p>Специально разработанные водные программы
+                                        для людей имеющих проблемы со здоровьем</p>
+                                </div>
+                                <div class="block__4">
+                                    <p>Саунатерапия, как способ лечения и
+                                        восстановления человеческого организма
+                                        от болезней</p>
+                                </div>
+                                <div class="block__5">
+                                    <p>Лучшее оборудование- спортивные и
+                                        реабилитационные тренажеры
+                                        (кинезиотерапия, ранее известная, как
+                                        механотерапия)</p>
+                                </div>
+
+                                <div class="block__6">
+                                    <p>Адаптированные для людей имеющих проблемы
+                                        со здоровьем самые популярные групповые
+                                        программы: кросфит, степ-аэробика,
+                                        боди-памп, йога, пилатэс и т.д.</p></div>
+
+                                <div class="block__7"><img class="img-yoga"
+                                        src="images/yogamat.png"
+                                        alt="мед.атрибуты" width="338"
+                                        height="333">
+                                </div>
+
+                                <div class="block__8">
+                                    <p>Специальные медицинские групповые
+                                        программы
+                                        направленные на излечение тех или иных
+                                        недугов
+                                        (гимнастика для восстановления шейного и
+                                        поясничного отделов позвоночника,
+                                        лечение
+                                        суставов и других проблем
+                                        опорно-двигательного аппарата)
+                                    </p></div>
+                                <div class="block__9"><img class="img-woman"
+                                        src="images/sportswoman.png"
+                                        alt="Спортсменка" width="541"
+                                        height="335">
+                                </div>
+
+                            </div>
+                        </main>
+<!---------------------------------------------Подвал----------------------------------------------->
+                        <footer class="footer">
+                            <div class="name-ftr">
+                                <h3>КОНТАКТЫ</h3>
+                            </div>
+                            <div class="name-yers"><p>Центр Доктора Лабунца -
+                                    все права защищены 2021</p></div>
+                            <div class="contacts">
+                                <div class="address">
+                                    <h3>Адрес</h3>
+                                    <p>г. Нур-Султан, проспект<br>Дружбы 21</p>
+                                </div>
+                                <div class="telephone">
+                                    <h3>Телефон</h3>
+                                    <p>+7 (777) 777 77 77</p>
+                                </div>
+                                <div class="E-mail:">
+                                    <h3>E-mail:</h3>
+                                    <p>info@labunec.kz</p>
+                                </div>
+                                <div class="social">
+                                    <h3>Социальные сети</h3>
+                                    <a class="logo__link"
+                                        href="https://www.instagram.com/"><img
+                                            src="images/instagram.svg"
+                                            alt="Инстаграм" width="30"
+                                            height="30">
+                                    </a>
+                                    <a class="logo__link"
+                                        href="https://twitter.com/?lang=ru"><img
+                                            src="images/twitter.svg"
+                                            alt="Твиттер" width="29.69"
+                                            height="24.37">
+                                    </a>
+
+                                    <a class="logo__link"
+                                        href="https://www.facebook.com/"><img
+                                            src="images/facebook.svg"
+                                            alt="Фейсбук" width="17.03"
+                                            height="30">
+                                    </a>
+                                </div>
+
+                            </div>
+<!---------------------------------------------Карта----------------------------------------------->
+                            <div
+                                style="position:relative; overflow:hidden; margin:auto; width:1000px;">
+                                <a
+                                    href="https://yandex.by/maps/163/astana/?utm_medium=mapframe&utm_source=maps"
+                                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Астана</a>
+                                <a
+                                    href="https://yandex.by/maps/geo/53168241/?ll=71.440206%2C51.131444&utm_medium=mapframe&utm_source=maps&z=13.94"
+                                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Астана
+                                    — Яндекс Карты</a>
+                                <iframe
+                                    src="https://yandex.by/map-widget/v1/?ll=71.440206%2C51.131444&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzE2ODI0MRIg0prQsNC30LDSm9GB0YLQsNC9LCDQkNGB0YLQsNC90LAiCg1g3I5CFUmDTEI%2C&z=13.94"
+                                    width="1000" height="392" frameborder="1"
+                                    allowfullscreen="true"
+                                    style="position:relative;"></iframe>
+                            </div>
+                        </footer>
+                    </div><!--wrapper-->
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+                    <script
+                        src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script><!--video-->
+
+                </body>
+                <script src="scripts/main.js"></script>
+                <script src="scripts/button-2.js"></script>
+                <script src="scripts/button-3.js"></script>
+                <script src="scripts/play-button.js"></script>
+
+            </html>
