@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/about.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="images/favicon.ico" type="image/icon">
+    <title>О центре</title>
+</head>
+<body>
+    <div id="header"></div>
+    <script>$.ajax({
+        url: 'header.html',    // Путь к файлу шапки
+        dataType: 'html',           // Ожидаемый тип данных - HTML
+        success: function(response) {
+            $('#header').html(response);    // Вставляем содержимое файла в элемент с id="header"
+        },
+        error: function(xhr, status, error) {
+            console.log('Ошибка при загрузке файла:', error);    // Обработка ошибок загрузки
+        }
+    });</script>
+    <div class="container">
+        <div class="fon">
+            <img src="images/fon2.png" alt="Фон" width="1918" height="335">
+        </div>
+        <div class="text">
+            <p>Первый в Казахстане медицинский центр, который занимается лечением и профилактикой заболеваний опорно-двигательного аппарата с помощью медицинского фитнеса. За 6 лет существования центра: мы вылечили более 2000 пациентов, открыли 2 филиала, планируем открытие еще 5, штат более 50 квалифицированных врачей и инструкторов-лфк, стали учебной базой кафедры Реабилитологии и спортивной медцины НАО "Медициского универститета Астана" получили патенты на методику и разработали собственную франшизу </p>
+        </div>
+    </div>
+   
+    
+</body>
+</html>
