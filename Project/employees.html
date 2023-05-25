@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/employees.css">
-        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link rel="icon" href="images/favicon.ico" type="image/icon">
         <title>Наши спеиалисты</title>
     </head>
@@ -13,10 +13,20 @@
         <div class="wrapper">
 
             <div id="header"></div>
-
+            <script>$.ajax({
+                url: 'header.html',    
+                dataType: 'html',           
+                success: function(response) {
+                    $('#header').html(response);   
+                },
+                error: function(xhr, status, error) {
+                    console.log('Ошибка при загрузке файла:', error);    
+                }
+            });</script>
             <div class="container">
 
                 <div class="title"><h3>НАШИ СПЕЦИАЛИСТЫ</h3></div>
+
                 <div class="cont-bl-1">
                     <div class="block-1">
                         <img class="circle" src="images/circle.png" alt="Круг"
@@ -115,7 +125,16 @@
             </div>
 
             <div id="footer"></div>
-
+            <script>$.ajax({
+                url: 'footer.html',    
+                dataType: 'html',           
+                success: function(response) {
+                    $('#header').html(response);   
+                },
+                error: function(xhr, status, error) {
+                    console.log('Ошибка при загрузке файла:', error);    
+                }
+            });</script>
         </div>
     </body>
 </html>
