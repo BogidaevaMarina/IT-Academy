@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +9,9 @@
         <title>Галерея</title>
     </head>
     <body>
-        <div id="header"></div>
-        <script>$.ajax({
+        <div class="wrapper">
+            <div id="header"></div>
+            <script>$.ajax({
         url: 'header.html',    
         dataType: 'html',           
         success: function(response) {
@@ -20,33 +21,33 @@
             console.log('Ошибка при загрузке файла:', error);    
         }
     });</script>
-        <div class="container-ga">
-            <div class="gallery">
-                <div class="foto-ga"><h3>ФОТОГАЛЕРЕЯ </h3></div>
-                <div class="separator"></div>
-                <div class="video-ga"><h3>ВИДЕОГАЛЕРЕЯ</h3></div>
+            <div class="container-ga">
+                <div class="gallery">
+                    <div class="foto-ga"><h3>ФОТОГАЛЕРЕЯ </h3></div>
+                    <div class="separator"></div>
+                    <div class="video-ga"><h3>ВИДЕОГАЛЕРЕЯ</h3></div>
+                </div>
+                <div class="name-ga"><h2>ФОТО</h2></div>
+
+                <div class="block-foto">
+                    <div><img id="image1" class="bl-foto-ga"
+                            src="images/People1.jpg" alt="Человек"></div>
+
+                    <div><img id="image2" class="bl-foto-ga"
+                            src="images/People2.jpg" alt="Человек"></div>
+                    <div><img id="image3" class="bl-foto-ga"
+                            src="images/People3.jpg" alt="Люди"></div>
+
+                    <div><img id="image4" class="bl-foto-ga"
+                            src="images/People4.jpg" alt="Люди"></div>
+                    <div><img id="image5" class="bl-foto-ga"
+                            src="images/People5.jpg" alt="Люди"></div>
+                    <div><img id="image6" class="bl-foto-ga"
+                            src="images/People6.jpg" alt="Человек"></div>
+                </div>
+
             </div>
-            <div class="name-ga"><h2>ФОТО</h2></div>
-
-            <div class="block-foto">
-                <div><img id="image1" class="bl-foto-ga"
-                        src="images/People1.jpg" alt="Человек"></div>
-
-                <div><img id="image2" class="bl-foto-ga"
-                        src="images/People2.jpg" alt="Человек"></div>
-                <div><img id="image3" class="bl-foto-ga"
-                        src="images/People3.jpg" alt="Люди"></div>
-
-                <div><img id="image4" class="bl-foto-ga"
-                        src="images/People4.jpg" alt="Люди"></div>
-                <div><img id="image5" class="bl-foto-ga"
-                        src="images/People5.jpg" alt="Люди"></div>
-                <div><img id="image6" class="bl-foto-ga"
-                        src="images/People6.jpg" alt="Человек"></div>
-            </div>
-
-        </div>
-        <script>
+            <script>
         const images = document.querySelectorAll('.bl-foto-ga');
 
 images.forEach((image) => {
@@ -63,34 +64,37 @@ images.forEach((image) => {
 });
 
 </script>
-        <div class="name-ga"><h2>ВИДЕО</h2></div>
-        <div class="video-container">
-            <div class="video-box" onclick="openVideo('VIDEO_ID_1')">
-                <img src="images/video1.jpg" alt="Видео 1"></div>
+            <div class="name-ga"><h2>ВИДЕО</h2></div>
+            <div class="video-container">
+                <div class="video-box" onclick="openVideo('VIDEO_ID_1')">
+                    <img src="images/video1.jpg" alt="Видео 1"></div>
 
-            <div class="video-box" onclick="openVideo('VIDEO_ID_2')">
-                <img src="images/video2.jpg" alt="Видео 2"></div>
+                <div class="video-box" onclick="openVideo('VIDEO_ID_2')">
+                    <img src="images/video2.jpg" alt="Видео 2"></div>
 
-            <div class="video-box" onclick="openVideo('VIDEO_ID_3')">
-                <img src="images/video3.jpg" alt="Видео 3"></div>
+                <div class="video-box" onclick="openVideo('VIDEO_ID_3')">
+                    <img src="images/video3.jpg" alt="Видео 3"></div>
 
-            <div class="video-box" onclick="openVideo('VIDEO_ID_4')">
-                <img src="images/video4.jpg" alt="Видео 4"></div>
+                <div class="video-box" onclick="openVideo('VIDEO_ID_4')">
+                    <img src="images/video4.jpg" alt="Видео 4"></div>
 
-            <div class="video-box" onclick="openVideo('VIDEO_ID_5')">
-                <img src="images/video5.jpg" alt="Видео 5"></div>
+                <div class="video-box" onclick="openVideo('VIDEO_ID_5')">
+                    <img src="images/video5.jpg" alt="Видео 5"></div>
 
-            <div class="video-box" onclick="openVideo('VIDEO_ID_6')">
-                <img src="images/video6.jpg" alt="Видео 6"></div>
-        </div>
-        <script>
+                <div class="video-box" onclick="openVideo('VIDEO_ID_6')">
+                    <img src="images/video6.jpg" alt="Видео 6"></div>
+            </div>
+            <script>
             function openVideo(videoId) {
+                // Создайте ссылку на видео с YouTube, используя переданный videoId
                 var videoUrl = 'https://www.youtube.com/watch?v=_AMRMzlzL5k' + videoId;
-                    window.open(videoUrl, '_blank');
+    
+                // Откройте ссылку в новой вкладке
+                window.open(videoUrl, '_blank');
             }
         </script>
-        <div id="footer"></div>
-        <script>$.ajax({
+            <div id="footer"></div>
+            <script>$.ajax({
             url: 'footer.html',    
             dataType: 'html',           
             success: function(response) {
@@ -100,5 +104,6 @@ images.forEach((image) => {
                 console.log('Ошибка при загрузке файла:', error);    
             }
         });</script>
+        </div>
     </body>
 </html>
