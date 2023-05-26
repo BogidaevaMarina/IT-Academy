@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Thin.woff') format('woff'),
+}
+
+@font-face {
+    font-family: 'NK90';
+    src: url('/fonts/nk90.otf') format('otf'),
+
+}
+
+body {
+    font-family: 'Gilroy';
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper-ab {
+    width: 100%;
+    max-width: 1940px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.container-fon {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.fon {
+    background-color: #94C31F;
+}
+
+.fon img {
+    display: block;
+    width: 100%;
+}
+
+.text p {
+    margin: 10px;
+    word-break: break-all;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 966px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'NK90';
+    font-size: 24px;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+.caption h1 {
+    font-family: 'NK90';
+    font-size: 30px;
+    text-align: center;
+    color: #9BC72D;
+}
+
+.text-about,
+.text-about-2 {
+    max-width: 1214px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.image-wrapper {
+    max-width: 684px;
+    display: flex;
+}
+
+.foto-dr {
+    position: relative;
+    top: 17px;
+    right: -286px;
+    max-width: 684px;
+}
+
+p {
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    margin-top: 0px;
+}
+
+.text-wrapper-2 {
+    margin-left: 30px;
+    order: 2;
+}
+
+.text-wrapper-3 {
+    max-width: 1214px;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.image-wrapper-2 {
+    order: 1;
+}
+
+@media (max-width: 1600px) {
+    .text {
+        font-size: 24px;
+    }
+
+    .text-about,
+    .text-about-2 {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .image-wrapper,
+    .image-wrapper-2 {
+        order: 2;
+        align-self: center;
+    }
+
+    .text-wrapper-2 {
+        order: 1;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .text {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        width: 95%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 565px) {
+    .text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .text {
+        font-size: 12px;
+    }
+}
