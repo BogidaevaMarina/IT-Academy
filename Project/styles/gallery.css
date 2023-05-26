@@ -1,0 +1,107 @@
+@import url("https://use.typekit.net/enf8iwv.css");
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Thin.woff') format('woff'),
+
+}
+
+@font-face {
+    font-family: 'NK90';
+    src: url('/fonts/nk90.otf') format('otf'),
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy', sans-serif;
+
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1940px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.container-ga {
+    width: 100%;
+    max-width: 1350px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.separator {
+    width: 2px;
+    height: 30px;
+    background-color: #94C31F;
+    margin: 0 10px;
+    align-self: center;
+}
+
+.foto-ga h3,
+.video-ga h3 {
+    font-family: 'NK90';
+    font-size: 30px;
+    color: #94C31F;
+}
+
+.name-ga h2 {
+    font-family: 'NK90';
+    font-size: 34px;
+    color: #94C31F;
+    text-align: center;
+}
+
+.block-foto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    cursor: pointer;
+}
+
+.bl-foto-ga {
+    width: 387px;
+    height: 387px;
+}
+
+.bl-foto-ga {
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.bl-foto-ga.enlarged {
+    transform: scale(1.8);
+    z-index: 1;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1350px;
+    justify-content: center;
+    padding: 0 10px;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+.video-box {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.video-box img {
+    width: 387px;
+    height: 387px;
+}
