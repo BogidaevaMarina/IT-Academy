@@ -21,18 +21,21 @@ body {
     max-width: 1940px;
     padding: 0 10px;
     margin: 0 auto;
-}
-.fon {
-    background-color: #94C31F;
-}
-.fon img {
-    display: block;
-    width: 100%;
     height: auto;
 }
 
+.fon {
+    background-color: #94C31F;
+}
+
+.fon img {
+    display: block;
+    width: 100%;
+}
+
 .text p {
-    margin: 0;
+    margin: 10px;
+    word-break: break-all;
 }
 
 .text {
@@ -42,12 +45,12 @@ body {
     transform: translate(-50%, -50%);
     width: 80%;
     max-width: 966px;
-    height: auto;
     text-align: center;
     color: #ffffff;
     font-family: 'NK90';
     font-size: 24px;
     line-height: 1.5;
+    overflow: hidden;
 }
 
 @media (max-width: 1920px) {
@@ -70,39 +73,38 @@ body {
 
 @media (max-width: 1280px) {
     .text {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
 @media (max-width: 1024px) {
     .text {
         width: 90%;
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
 @media (max-width: 768px) {
     .text {
         width: 95%;
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 565px) {
     .text {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
 @media (max-width: 480px) {
     .text {
-        font-size: 8px;
+        font-size: 12px;
     }
 }
 
 @media (max-width: 320px) {
     .text {
-        font-size: 6px;
-        line-height: 1.2;
+        font-size: 12px;
     }
 }
