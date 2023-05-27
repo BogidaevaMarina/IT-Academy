@@ -528,3 +528,26 @@ text-align:left;
 .social {
 
 }
+
+@media (max-width: 768px) {
+    .menu__list {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    .burger-menu img {
+        width: 49px;
+        height: 18px;
+    }
+
+    .menu__list.open {
+        display: block;
+    }
+}
