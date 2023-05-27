@@ -1,0 +1,78 @@
+@import url("https://use.typekit.net/enf8iwv.css");
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Thin.woff') format('woff'),
+
+}
+
+@font-face {
+    font-family: 'NK90';
+    src: url('/fonts/nk90.otf') format('otf'),
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.wrapper-cf {
+    width: 100%;
+    max-width: 1940px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.container-cf {
+    width: 100%;
+    max-width: 1297px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ornament {
+    background: url("../images/ornament2.jpg");
+    width: 974px;
+    height: 1098px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.name-cf {
+    font-family: 'NK90';
+    font-size: 30px;
+    color: #9BC72D;
+    margin-top: 50px;
+    margin-bottom: 71px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.image-cf {
+    display: flex;
+    justify-content: space-between;
+    width: 732px;
+    margin-bottom: 136px;
+}
+
+.image-1 {
+    background: url("../images/certificate.jpg");
+    background-position: center;
+    width: 326px;
+    height: 458px;
+}
+
+.image-2 {
+    background: url("../images/certificate2.jpg");
+    width: 326px;
+    height: 458px;
+}
