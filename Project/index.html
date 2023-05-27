@@ -10,60 +10,19 @@
         <title>Центр доктора Лубунца</title>
     </head>
     <body>
+        <div id="header"></div>
+    <script>$.ajax({
+        url: 'header.html',    
+        dataType: 'html',           
+        success: function(response) {
+            $('#header').html(response);   
+        },
+        error: function(xhr, status, error) {
+            console.log('Ошибка при загрузке файла:', error);    
+        }
+    });</script>
         <div class="wrapper">
-            <header class="header">
-                <div class="container">
-                    <div class="header__logo">
-                        <a class="logo__link" href="index.html" title="Домашняя страница">
-                            <img class="logo" src="images/logo-1.png"
-                                alt="Логотип" width="162" height="50">
-                        </a>
-                    </div>
-                    <div class="header__icon">
-                        <a class="logo__link" href="https://www.instagram.com/" title="Переход на социальную сеть Инстаграм"><img
-                                src="images/instagram.svg"
-                                alt="Инстаграм" width="30" height="30">
-                        </a>
-                        <a class="logo__link"
-                            href="https://twitter.com/?lang=ru" title="Переход на социальную сеть Твиттер"><img
-                                src="images/twitter.svg"
-                                alt="Твиттер" width="30"
-                                height="30">
-                        </a>
-
-                        <a class="logo__link" href="https://www.facebook.com/" title="Переход на социальную сеть Фейсбук"><img
-                                src="images/facebook.svg"
-                                alt="Фейсбук" width="17"
-                                height="30">
-                        </a>
-                    </div></div>
-                <hr>
-
-                <div class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="employees.html" title="Информация о сотрудниках">Сотрудники</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="about.html" title="Информацция об центре">О центре</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="gallery.html" title="Фото и видео тренировок">Галерея</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="author.html" title="Информация об основателе">Об авторе</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="methods.html" title="Методика (кинезиотерапия)">Методика</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="certificates.html" title="Информация об квалификации">Сертификаты</a>
-                        </li>
-                    </ul>
-                </div>
-            </header>
-
-            <main class="main">
+              <main class="main">
                 <div class="block-1">
                     <div class="foto-1">
                         <img src="images/ornament.png" alt="Орнамент"
@@ -238,67 +197,17 @@
 
                             </div>
                         </main>
-
-                        <footer class="footer">
-                            <div class="name-ftr">
-                                <h3>КОНТАКТЫ</h3>
-                            </div>
-                            <div class="name-yers"><p>Центр Доктора Лабунца -
-                                    все права защищены 2021</p></div>
-                            <div class="contacts">
-                                <div class="address">
-                                    <h3>Адрес</h3>
-                                    <p>г. Нур-Султан, проспект<br>Дружбы 21</p>
-                                </div>
-                                <div class="telephone">
-                                    <h3>Телефон</h3>
-                                    <p>+7 (777) 777 77 77</p>
-                                </div>
-                                <div class="E-mail:">
-                                    <h3>E-mail:</h3>
-                                    <p>info@labunec.kz</p>
-                                </div>
-                                <div class="social">
-                                    <h3>Социальные сети</h3>
-                                    <a class="logo__link"
-                                        href="https://www.instagram.com/" title="Переход на социальную сеть Инстаграм"><img
-                                            src="images/instagram.svg"
-                                            alt="Инстаграм" width="30"
-                                            height="30">
-                                    </a>
-                                    <a class="logo__link"
-                                        href="https://twitter.com/?lang=ru" title="Переход на социальную сеть Твиттер"><img
-                                            src="images/twitter.svg"
-                                            alt="Твиттер" width="30"
-                                            height="24">
-                                    </a>
-
-                                    <a class="logo__link"
-                                        href="https://www.facebook.com/" title="Переход на социальную сеть фейсбук"><img
-                                            src="images/facebook.svg"
-                                            alt="Фейсбук" width="17"
-                                            height="30">
-                                    </a>
-                                </div>
-
-                            </div>
-
-                            <div
-                                style="position:relative; overflow:hidden; margin:auto; width:1000px;">
-                                <a
-                                    href="https://yandex.by/maps/163/astana/?utm_medium=mapframe&utm_source=maps"
-                                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Астана</a>
-                                <a
-                                    href="https://yandex.by/maps/geo/53168241/?ll=71.440206%2C51.131444&utm_medium=mapframe&utm_source=maps&z=13.94"
-                                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Астана
-                                    — Яндекс Карты</a>
-                                <iframe
-                                    src="https://yandex.by/map-widget/v1/?ll=71.440206%2C51.131444&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzE2ODI0MRIg0prQsNC30LDSm9GB0YLQsNC9LCDQkNGB0YLQsNC90LAiCg1g3I5CFUmDTEI%2C&z=13.94"
-                                    width="1000" height="392" frameborder="1"
-                                    allowfullscreen="true"
-                                    style="position:relative;"></iframe>
-                            </div>
-                        </footer>
+<div id="footer"></div>
+    <script>$.ajax({
+        url: 'footer.html',    
+        dataType: 'html',           
+        success: function(response) {
+            $('#footer').html(response);   
+        },
+        error: function(xhr, status, error) {
+            console.log('Ошибка при загрузке файла:', error);    
+        }
+    });</script>
                     </div>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
