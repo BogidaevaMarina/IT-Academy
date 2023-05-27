@@ -28,7 +28,6 @@ body {
 .container-cf {
     width: 100%;
     max-width: 1277px;
-    padding: 0 auto;
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
@@ -39,7 +38,7 @@ body {
     width: 974px;
     height: 1098px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .name-cf {
@@ -54,7 +53,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 136px;
 }
 
 .image-cf {
