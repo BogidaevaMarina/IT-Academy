@@ -138,10 +138,6 @@ hr {
     margin-top: 72px;
 }
 
-button::-moz-focus-inner {
-    border: 0;
-}
-
 .text h1 {
     margin-bottom: 0px;
 }
