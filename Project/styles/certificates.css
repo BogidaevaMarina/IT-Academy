@@ -73,3 +73,53 @@ body {
     width: 326px;
     height: 458px;
 }
+
+
+@media (max-width: 768px) {
+  .wrapper-cf {
+    padding: 0 20px;
+  }
+
+  .container-cf {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .ornament {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .name-cf {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .image-cf {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  .image-1,
+  .image-2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .name-cf {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
