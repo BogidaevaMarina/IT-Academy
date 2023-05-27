@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles/certificates.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="icon" href="images/favicon.ico" type="image/icon">
+        <title>Лицензии и сертификаты</title>
+    </head>
+    <body>
+
+        <div id="header"></div>
+        <script>$.ajax({
+                url: 'header.html',    
+                dataType: 'html',           
+                success: function(response) {
+                    $('#header').html(response);   
+                },
+                error: function(xhr, status, error) {
+                    console.log('Ошибка при загрузке файла:', error);    
+                }
+            });</script>
+        <div class="wrapper-cf">
+            <div class="container-cf">
+                <div class="ornament">
+                    <div class="content">
+                        <h3 class="name-cf">ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</h3>
+                        <div class="image-cf">
+                            <div class="image-1"></div>
+                            <div class="image-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="footer"></div>
+        <script>$.ajax({
+                url: 'footer.html',    
+                dataType: 'html',           
+                success: function(response) {
+                    $('#footer').html(response);   
+                },
+                error: function(xhr, status, error) {
+                    console.log('Ошибка при загрузке файла:', error);    
+                }
+            });</script>
+    </body>
+</html>
