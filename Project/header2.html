@@ -37,6 +37,9 @@
                     </div></div>
                 <hr>
                 <div class="menu">
+                    <div class="burger-menu">
+            <img src="images/menu.svg" alt="Бургер" width="49" height="18">
+        </div>
                     <ul class="menu__list">
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="employees.html" title="Информация о сотрудниках">Сотрудники</a>
@@ -56,9 +59,15 @@
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="certificates.html" title="Информация об квалификации">Сертификаты</a>
                         </li>
-                    </ul>
+                    </ul>const burgerMenu = document.querySelector('.burger-menu');
+const menuList = document.querySelector('.menu__list');
+
+burgerMenu.addEventListener('click', function() {
+    menuList.classList.toggle('open');
+});<script>
                 </div>
                <hr>
             </header>
+        <script>
    </body>
 </html>
