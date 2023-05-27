@@ -5,11 +5,9 @@
     src: url('/fonts/Gilroy-Thin.woff') format('woff'),
 
 }
-
 @font-face {
     font-family: 'NK90';
     src: url('/fonts/nk90.otf') format('otf'),
-
 }
 
 body {
