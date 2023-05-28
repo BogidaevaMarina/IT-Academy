@@ -16,17 +16,17 @@ var lists = [
 var buttons = document.getElementsByClassName('button-2');
 var listItem = document.getElementById('list__item');
 
-// Показать первый список при загрузке страницы
+
 changeText_2(0);
 
-// Функция для изменения текста и активации кнопки
+
 function changeText_2(option) {
     var list = lists[option];
 
-    // Очистить список
+   
     listItem.innerHTML = '';
 
-    // Добавить пункты списка
+   
     for (var i = 0; i < list.length; i++) {
         var li = document.createElement('li');
         var span = document.createElement('span');
@@ -37,11 +37,11 @@ function changeText_2(option) {
         listItem.appendChild(li);
     }
 
-    // Деактивировать все кнопки
+    
     for (var j = 0; j < buttons.length; j++) {
         buttons[j].classList.remove('active');
     }
 
-    // Активировать выбранную кнопку
+   
     buttons[option].classList.add('active');
 }
