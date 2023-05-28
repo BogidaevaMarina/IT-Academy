@@ -15,20 +15,20 @@ var button = document.getElementsByClassName("button");
             "Мы обучаем использовать полученные знания, их внедрению в систему тренировок и в ежедневную активность – для поддержания здоровья. Это надежный инструмент для самостоятельной работы и саморазвития.",
             "Наша методика, основанная на научных принципах и подтвержденная результатами исследований."
         ];
-        var activeButtonIndex = 0; // Индекс текущей активной кнопки
+        var activeButtonIndex = 0; 
         
         function changeText(index) {
-            button[activeButtonIndex].classList.remove("active"); // Удаляем класс "active" у текущей активной кнопки
-            button[activeButtonIndex].style.color = "black"; // Восстанавливаем черный цвет названия текущей активной кнопки
+            button[activeButtonIndex].classList.remove("active"); 
+            button[activeButtonIndex].style.color = "black"; 
             button[activeButtonIndex].style.backgroundColor = "#94C31F";
 
-            button[index].classList.add("active"); // Добавляем класс "active" для выбранной кнопки
-            button[index].style.color = "white"; // Устанавливаем белый цвет названия активной кнопки
+            button[index].classList.add("active"); 
+            button[index].style.color = "white"; 
             button[index].style.backgroundColor = "#94C31F";
-            activeButtonIndex = index; // Обновляем индекс текущей активной кнопки
+            activeButtonIndex = index;
             document.getElementById("text").innerText = texts[index];
             document.getElementById("text-2").innerText = additionalTexts[index];
         }
         
-        // Вызываем функцию changeText(0) для отображения первого текста и активации первой кнопки при загрузке страницы
+       
         changeText(0);
