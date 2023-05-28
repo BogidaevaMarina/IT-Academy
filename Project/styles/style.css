@@ -94,13 +94,14 @@ hr {
   flex-basis: auto;
   flex-grow: 1;
   flex-shrink: 0.8;
+  max-width:50%;
 }
 
 
 
 .foto-1 {
   position: relative;
-  transform: translateX(49px);
+ 
 }
 
 .foto-1 .text {
