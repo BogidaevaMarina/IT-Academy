@@ -118,8 +118,7 @@ hr {
 .foto-1 button {
   position: absolute;
   bottom: 85px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 35%;
   width: 291px;
   height: 94px;
   border-radius: 12px;
